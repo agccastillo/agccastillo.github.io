@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anthony Gabriel Castillo · AI Engineering Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#EEF1F4;--ink:#14213D;--soft:#4A5670;--signal:#2B59FF;--mark:#FFD23F;--line:#C9D0DC}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;background:var(--paper);color:var(--ink);font:19px/1.65 "Newsreader",Georgia,serif}
+h1,h2,h3,nav{font-family:"Bricolage Grotesque",system-ui,sans-serif}
+a{color:var(--signal)}
+:focus-visible{outline:3px solid var(--signal);outline-offset:3px}
+nav{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:1px solid var(--line);display:flex;gap:1.5rem;padding:.9rem clamp(1rem,5vw,4rem);overflow-x:auto;white-space:nowrap}
+nav a{color:var(--ink);text-decoration:none;font-weight:500;font-size:.95rem}
+nav a:hover{color:var(--signal)}
+nav a:first-child{font-weight:800;margin-right:auto}
+section{padding:clamp(3rem,8vw,6rem) clamp(1rem,5vw,4rem);max-width:1000px;margin:0 auto}
+h1{font-size:clamp(2.8rem,9vw,6.5rem);line-height:.95;margin:0 0 1.2rem;font-weight:800;letter-spacing:-.03em}
+h1 span{background:linear-gradient(transparent 62%,var(--mark) 62%)}
+h2{font-size:clamp(1.8rem,4vw,2.6rem);margin:0 0 1.5rem;letter-spacing:-.02em}
+h3{margin:0 0 .3rem;font-size:1.25rem}
+p{max-width:62ch;margin:0 0 1rem}
+.lead{font-size:1.35rem;color:var(--soft)}
+.hero{display:grid;gap:2rem;grid-template-columns:1.2fr 1fr;align-items:center;min-height:80vh}
+.curve{width:100%;height:auto}
+.curve path{fill:none;stroke:var(--signal);stroke-width:3;stroke-dasharray:900;stroke-dashoffset:900;animation:draw 2.4s ease-out .3s forwards}
+.curve .ax{stroke:var(--ink);stroke-width:1.5;fill:none;animation:none;stroke-dasharray:none}
+.curve text{font:12px "Bricolage Grotesque",sans-serif;fill:var(--soft)}
+@keyframes draw{to{stroke-dashoffset:0}}
+.facts{display:grid;gap:.4rem;margin:1.5rem 0 0;padding:0;list-style:none;font-family:"Bricolage Grotesque",sans-serif;font-weight:500}
+.grid{display:grid;gap:1.25rem;grid-template-columns:repeat(auto-fit,minmax(270px,1fr))}
+.proj{border:2px solid var(--ink);padding:1.4rem;background:#fff}
+.proj p{font-size:1rem;margin:.4rem 0 .8rem}
+.tags{font-family:"Bricolage Grotesque",sans-serif;font-size:.85rem;color:var(--soft)}
+.post{border-top:1px solid var(--line);padding:1rem 0}
+.post summary{cursor:pointer;font:500 1.2rem "Bricolage Grotesque",sans-serif}
+.post time{display:block;font-size:.9rem;color:var(--soft);margin:.5rem 0}
+.btn{display:inline-block;background:var(--ink);color:#fff;padding:.7rem 1.2rem;text-decoration:none;font:500 1rem "Bricolage Grotesque",sans-serif;margin:0 .6rem .6rem 0}
+.btn:hover{background:var(--signal)}
+footer{text-align:center;padding:2rem;color:var(--soft);font-size:.9rem;border-top:1px solid var(--line)}
+@media(max-width:760px){.hero{grid-template-columns:1fr;min-height:auto}}
+@media(prefers-reduced-motion:reduce){.curve path{animation:none;stroke-dashoffset:0}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="#home">Anthony Gabriel Castillo</a>
+  <a href="#about">About</a>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#reflections">Reflections</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<main>
+<section id="home" class="hero">
+  <div>
+    <h1>Hi, I'm <span>Anthony Gabriel Castillo</span>.</h1>
+    <p class="lead">I'm learning to build AI systems that work in the real world, not just in notebooks.</p>
+    <ul class="facts">
+      <li>BS in AI Engineering</li>
+      <li>1st year · Mapúa University</li>
+    </ul>
+  </div>
+  <svg class="curve" viewBox="0 0 320 240" role="img" aria-label="A training loss curve that falls over time, drawn as a decorative graphic">
+    <path class="ax" d="M30 10V210H310"/>
+    <path d="M30 30C60 120 90 160 130 178S200 196 240 200 290 203 305 204"/>
+    <text x="36" y="26">loss</text>
+    <text x="250" y="228">epochs</text>
+  </svg>
+</section>
+
+<section id="about">
+  <h2>About me</h2>
+  <p>I'm a student in the AI Engineering program at Mapúa University. I grew up in [Your City/Province], and I've always liked [a hobby or interest, e.g. taking things apart, games, music, data].</p>
+  <p>I chose AI Engineering because [your real reason: a moment, a problem you want to solve, something you saw]. I'm most curious about [e.g. computer vision, language models, AI for health or agriculture].</p>
+  <p>Outside class, I [clubs, sports, creative work, part-time job].</p>
+</section>
+
+<section id="portfolio">
+  <h2>Portfolio</h2>
+  <div class="grid">
+    <article class="proj">
+      <h3>[Project name]</h3>
+      <p>One or two sentences: what you built, the problem it solves, and what you did.</p>
+      <div class="tags">Python · [course code, e.g. AIE100]</div>
+      <p><a href="#">View on GitHub</a></p>
+    </article>
+    <article class="proj">
+      <h3>[Lab report or activity]</h3>
+      <p>What the task was, what you found, and what you would try next.</p>
+      <div class="tags">[tools used] · [semester]</div>
+      <p><a href="#">Read the report</a></p>
+    </article>
+    <article class="proj">
+      <h3>[Creative output]</h3>
+      <p>A poster, video, design, or write-up. Add a link or an image.</p>
+      <div class="tags">[tools used]</div>
+      <p><a href="#">Open</a></p>
+    </article>
+  </div>
+</section>
+
+<section id="reflections">
+  <h2>Reflections</h2>
+  <details class="post" open>
+    <summary>What I expect from AI Engineering</summary>
+    <time datetime="2026-10-14">October 14, 2026</time>
+    <p>Write 3 to 5 sentences: what you hope to learn, what scares you, what surprised you in the first weeks.</p>
+  </details>
+  <details class="post">
+    <summary>[Title of your next entry]</summary>
+    <time datetime="2026-11-01">[Date]</time>
+    <p>What you learned, what went wrong, and what you'll do differently next time.</p>
+  </details>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Open to mentorship, collaboration, and internship conversations.</p>
+  <a class="btn" href="mailto:you@example.com">Email me</a>
+  <a class="btn" href="https://www.linkedin.com/in/your-profile">LinkedIn</a>
+  <a class="btn" href="https://github.com/your-username">GitHub</a>
+</section>
+</main>
+
+<footer>© 2026 Anthony Gabriel Castillo · Built for AIE100</footer>
+</body>
+</html>
